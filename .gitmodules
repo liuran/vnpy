@@ -1,0 +1,3 @@
+[submodule "vnpy_project"]
+	path = vnpy_project
+	url = https://github.com/liuran/vnpy_project.git
