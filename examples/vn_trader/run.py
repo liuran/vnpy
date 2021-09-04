@@ -4,7 +4,7 @@ from vnpy.event import EventEngine
 from vnpy.trader.engine import MainEngine
 from vnpy.trader.ui import MainWindow, create_qapp
 
-from vnpy.gateway.ctp import CtpGateway
+#from vnpy.gateway.ctp import CtpGateway
 # from vnpy.gateway.ctptest import CtptestGateway
 # from vnpy.gateway.mini import MiniGateway
 # from vnpy.gateway.minitest import MinitestGateway
@@ -27,10 +27,10 @@ from vnpy.gateway.ctp import CtpGateway
 # from vnpy.gateway.mt5 import Mt5Gateway
 # from vnpy.gateway.binance import BinanceGateway
 # from vnpy.gateway.binances import BinancesGateway
-# from vnpy.gateway.huobi import HuobiGateway
-# from vnpy.gateway.huobif import HuobifGateway
-# from vnpy.gateway.huobis import HuobisGateway
-# from vnpy.gateway.huobio import HuobioGateway
+from vnpy.gateway.huobi import HuobiGateway
+#from vnpy.gateway.huobif import HuobifGateway
+#from vnpy.gateway.huobis import HuobisGateway
+#from vnpy.gateway.huobio import HuobioGateway
 # from vnpy.gateway.okex import OkexGateway
 # from vnpy.gateway.okexf import OkexfGateway
 # from vnpy.gateway.okexs import OkexsGateway
@@ -73,7 +73,7 @@ def main():
 
     main_engine = MainEngine(event_engine)
 
-    main_engine.add_gateway(CtpGateway)
+    #main_engine.add_gateway(CtpGateway)
     # main_engine.add_gateway(CtptestGateway)
     # main_engine.add_gateway(MiniGateway)
     # main_engine.add_gateway(MinitestGateway)
@@ -96,7 +96,7 @@ def main():
     # main_engine.add_gateway(Mt5Gateway)
     # main_engine.add_gateway(BinanceGateway)
     # main_engine.add_gateway(BinancesGateway)    
-    # main_engine.add_gateway(HuobiGateway)
+    main_engine.add_gateway(HuobiGateway)
     # main_engine.add_gateway(HuobifGateway)
     # main_engine.add_gateway(HuobisGateway)    
     # main_engine.add_gateway(HuobioGateway)
